@@ -1,0 +1,14 @@
+import React from 'react'
+import { getSwaggerSpec } from '../utils/swagger'
+
+import SwaggerUI from 'swagger-ui-react/swagger-ui'
+
+import 'swagger-ui-react/swagger-ui.css'
+
+export default function Docs() {
+    const spec = getSwaggerSpec();
+
+    return <SwaggerUI spec={ spec } />;
+};
+
+
