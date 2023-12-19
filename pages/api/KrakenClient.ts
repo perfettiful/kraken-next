@@ -3,6 +3,7 @@ import crypto from 'crypto';
 import queryString from 'query-string';
 
 type OrderDetails = {
+    orderId: string;
     pair: string;
     type: string;
     ordertype: string;
